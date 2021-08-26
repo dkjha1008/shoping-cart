@@ -1,4 +1,4 @@
-# moreyou
+# Shoping Cart App
 
 ## Project setup
 ```

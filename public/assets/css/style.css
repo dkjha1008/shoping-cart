@@ -1,0 +1,922 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.min-height-100 {
+    min-height: 100vh;
+}
+.account-form-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+.max-420{
+    max-width: 420px;
+    margin: 0 auto;
+}
+.account-cntnt>h2 {
+    color: #231f20;
+    font-size: 46px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.account-form-wrapper form {
+    padding-top: 22px;
+}
+.logo-wrapper>img {
+    width: auto;
+    max-width: 100%;
+}
+.account-form-wrapper .submit-design {
+    margin-top: 40px;
+    margin-bottom: 37px;
+}
+.submit-design:hover {
+    background-color: #52b992;
+}
+.forget-password>a:hover{
+ color: #52b992;;   
+}
+.account-cntnt>p {
+    color: #6a6869;
+    font-size: 22px;
+    font-weight: 300;
+}
+.account-form-wrapper .logo-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.account-cntnt {
+    text-align: center;
+    width: 100%;
+}
+form {
+    width: 100%;
+}
+.input-design input {
+    border: 1px solid #888888;
+    width: 100%;
+    position: relative;
+    padding: 12px 50px 12px 15px;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #959595;
+}
+.form-grouph {
+    position: relative;
+    margin-bottom: 15px;
+}
+.input-design .input-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #afabab;
+    font-size: 20px;
+}
+.checkbox-relative {
+    display: flex;
+    align-items: center;
+}
+.checkbox-input {
+    position: relative;
+    color: #6a6869;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 8px;
+}
+.forget-password>a {
+    color: #80828e;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.checkbox-input .checkbox-custom {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 10px;
+}
+.checkbox-input input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+    max-width: 24px;
+}
+input:focus, textarea:focus, button:focus{
+    outline: none;
+}
+.checkbox-input .checkbox-custom::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    transform: rotate(45deg);
+    left: 8px;
+    top: 3px;
+    display: none;
+}
+.checkbox-input input:checked+.checkbox-custom::after {
+    display: block;
+}
+.submit-design {
+    display: block;
+    width: 100%;
+    font-size: 19px;
+    border: none;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 13px;
+    background-color: #f1d000;
+    color: #fff;
+}
+.account-page-wrapper.forget-password-screen .submit-design {
+    margin-top: 28px;
+}
+.rght-account-img>img {
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+}
+.dont-account {
+    position: absolute;
+    top: 20px;
+    right: 44px;
+}
+.right-grey-bg {
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+}
+.no-mrg {
+    margin: 0px;
+}
+.no-padd {
+    padding: 0px;
+}
+.dont-account>p {
+    color: #80828e;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+.btn.btn-design {
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 9px 49px;
+}
+.btn.yellow {
+    background-color: #f1d000;
+    color: #fff;
+}
+.submit-design-profile>.btn.rectangle-btn:first-child {
+    margin-right: 13px;
+}
+.btn.rectangle-btn {
+    padding: 12px 52px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.btn.grey {
+    background-color: #bcbcbc;
+    box-shadow: none;
+    color: #fff;
+}
+.btn.grey:hover {
+    background-color: #f07357;
+}
+.btn.yellow:hover {
+background-color: #52b992;
+}
+.dont-account .btn {
+    margin-left: 15px;
+}
+.main-header-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    box-shadow: 1px 2px 20px -16px;
+    position: relative;
+    z-index: 9;
+}
+.side-bar-wrapper {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #1e1e1e;
+    right: 0;
+    width: 100%;
+    max-width: 280px;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+}
+.side-bar-logo {
+    padding: 10px 15px;
+    position: relative;
+}
+.side-bar-logo>img {
+    width: 100%;
+    max-width: 170px;
+}
+.side-bar-logo .close-toggleicn {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    top: 18px;
+    cursor: pointer;
+}
+.sideBar-tabs>ul.nav.nav-tabs {
+    display: block;
+    border: none;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+}
+.sideBar-tabs>ul.nav.nav-tabs .nav-link {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    padding: 9px 15px 12px 15px;
+}
+.sideBar-tabs>ul.nav.nav-tabs .nav-link .tab-icon {
+    margin-right: 25px;
+    width: 20px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 1px;
+}
+.sideBar-tabs>ul.nav.nav-tabs .nav-link:hover {
+    background-color: rgba(111,111,111,0.20);
+}
+.sideBar-tabs>ul.nav.nav-tabs .nav-link.active {
+    background-color: rgba(111,111,111,0.20);
+}
+.sideBar-tabs>ul.nav.nav-tabs .nav-link.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #f2cd15;
+}
+.sideBar-tabs {
+    padding-top: 58px;
+}
+.tab-content-dashboard {
+    background-color: #f7f7f7;
+    padding: 35px;
+    transition: all 0.5s ease-in-out;
+}
+.my-profile-sec {
+    background-color: #fff;
+    box-shadow: 1px 2px 30px -17px grey;
+    border-radius: 12px;
+    height: 100%;
+}
+.tab-heading>h2 {
+    color: #231f20;
+    font-size: 30px;
+    padding: 0px 15px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.my-profile-sec>.profile-img {
+    background-color: #d7d8d8;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+.my-profile-sec>.profile-img>img {
+    width: auto;
+    max-width: 100%;
+    margin-top: -42px;
+}
+.my-profile-sec .profile-cntnt {
+    padding: 33px;
+}
+.my-profile-sec .profile-cntnt>h2 {
+    color: #231f20;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.my-profile-sec .profile-cntnt>p {
+    font-size: 15px;
+    color: #6a6869;
+    font-weight: 300;
+}
+.my-apps-wrapper {
+    background-color: #fff;
+    box-shadow: 1px 2px 30px -17px grey;
+    border-radius: 12px;
+    height: 100%;
+}
+.my-apps-mainheader>h2 {
+    font-size: 24px;
+    color: #231f20;
+    margin-bottom: 0px;
+}
+.my-apps-mainheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eceef0;
+}
+.apps-listing-sec>ul {
+    padding: 20px;
+}
+.apps-listing-sec>ul>li {
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.apps-listing-sec>ul>li.installed {
+    background-color: #f4f4f4;
+}
+.circle-apps-icon {
+    display: flex;
+    width: 57px;
+    height: 57px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    color: #fff;
+}
+.apps-listing-sec li>a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.apps-listing-sec li>a .app-description {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 35px;
+}
+.apps-listing-sec li>a .chekmark {
+    color: #7fde81;
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+}
+.apps-listing-sec>ul>li.install {
+    background-color: #fff4bc;
+}
+.apps-listing-sec li>a:hover {
+    text-decoration: none;
+}
+.apps-listing-sec>ul>li.installed:hover {
+    background-color: #ebeaea;
+}
+.apps-listing-sec>ul>li.install:hover {
+    background-color: #e9dfab;
+}
+.recent-activity {
+    background-color: #fff;
+    box-shadow: 1px 2px 30px -17px grey;
+    border-radius: 12px;
+    height: 100%;
+}
+.recent-activity-wrapper {
+    padding-left: 35px;
+    padding-right: 30px;
+}
+.recent-activity-wrapper ul>li h4 {
+    color: #232122;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.recent-activity-wrapper>ul {
+    border-left: 2px solid #eceef0;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.time-div {
+    color: #959595;
+    font-size: 13px;
+}
+a:hover{
+    text-decoration: none;
+}
+.recent-activity-wrapper>ul>li {
+    border: 1px solid #e8e8e9;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 22px;
+}
+.recent-activity-wrapper>ul>li::after {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 17px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #e8e8e9;
+    border-left: 2px solid #e8e8e9;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+.recent-activity-wrapper>ul>li::before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    width: 20px;
+    height: 20px;
+    background-color: #f2cd15;
+    border-radius: 50px;
+    border: 3px solid #e5e5e5;
+}
+.user-account .user-name {
+    color: #909090;
+    font-size: 15px;
+}
+.user-account .dropdown-toggle::after {
+    color: #909090;
+    top: 3px !important;
+    position: relative;
+}
+.user-account .dropdown .circle-user-name {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    background-color: #f2cd15;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #fff;
+    margin-right: 5px;
+}
+.toggle-icn {
+    cursor: pointer;
+}
+button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.side-bar-wrapper.active {
+    left: 0px;
+}
+.slide-left {
+    margin-left: 280px;
+}
+.apps-listing-sec li>a .app-description .app-installed {
+    display: block;
+    color: #959595;
+    font-weight: 400;
+}
+.apps-listing-sec li>a .app-description .app-install {
+    display: block;
+    color: #959595;
+    font-weight: 400;
+}
+.footer-description {
+    background-color: #f3f3f3;
+}
+.footer-description>p {
+    margin-bottom: 0px;
+    color: #7b8093;
+    font-size: 15px;
+    font-weight: 300;
+}
+.footer-description {
+    background-color: #f7f7f7;
+    padding: 50px;
+}
+.my-profile-form {
+    background-color: #fff;
+    box-shadow: 1px 2px 30px -17px grey;
+    border-radius: 12px;
+    padding: 35px;
+}
+.submit-design-profile {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin-top: 45px;
+    padding-top: 40px;
+    border-top: 1px solid #eceef0;
+}
+
+/*select account type css starts here*/
+
+.frst_box{
+    width: 418px;
+  height: 412px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Arial Regular', 'Arial', sans-serif;
+  color: #333333;
+  text-align: center;
+  line-height: normal;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.04);
+  padding: 70px;
+}
+.bank-or-credit-card {
+    color: #333333;
+    font-size: 20px;
+    text-align: : center;
+    font-weight: 700;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+p.connect-to-your-bank {
+    color: #959595;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+button.next {
+    width: 313px;
+    height: 55px;
+    border-radius: 53px;
+    border: 1px solid #797979;
+    background-color: rgba(241, 208, 0, 0);
+    box-sizing: border-box;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif;
+    font-weight: 600;
+    color: #888888;
+    text-align: center;
+    line-height: normal;
+    margin-right: 20px;
+}
+button.cancel{
+    width: 313px;
+    height: 55px;
+    border-radius: 53px;
+    border: 1px solid #797979;
+    background-color: rgba(241, 208, 0, 0);
+    box-sizing: border-box;
+    font-family: 'Proxima Nova Semibold', 'Proxima Nova Regular', 'Proxima Nova', sans-serif;
+    font-weight: 600;
+    color: #888888;
+    text-align: center;
+    line-height: normal;
+}
+.buttons_section {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+/*add to cart css starts here*/
+
+
+.input_section input#email, select#exampleFormControlSelect1, .selectopton_content input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+}
+button.next {
+    background-color: rgba(241, 208, 0, 1);
+    color: #fff;
+    border: none;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.tab-heading {
+    display: flex;
+}
+.table_heading {
+    width: 70%;
+    margin-bottom: 30px;
+}
+button.btn1 {
+    justify-content: flex-end;
+    background-color: rgba(241, 208, 0, 1);
+    color: #fff;
+    border: none;
+    width: 184px;
+    height: 44px;
+    border-radius: 5px;
+}
+
+/*add bank account css starts here*/
+
+.selectopton_content {
+    width: 100%;
+    margin-top: 30px;
+}
+.selectopton_content span.input-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #afabab;
+    font-size: 20px;
+}
+h4.extended_content {
+    margin: 10px 0px;
+}
+
+/*portal connection css starts here*/
+.portal_section img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    height: 100px;
+}
+.portal_series {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 4%);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 14px;
+    border-radius: 12px;
+}
+.portal_series p {
+    margin-bottom: 0px;
+}
+.portal_series .switch {
+    margin-top: 10px;
+}
+.portal_series .switch, .portal_series input:checked + .slider {
+    background-color: #5dd67d;
+    border-radius: 34px;
+}
+.portal_series p {
+    font-size: 18px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+.portal_series span {
+    color: #b59e9e;
+}
+.portal_section {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+select#exampleFormControlSelect1:focus, input#email:focus {
+    box-shadow: none;
+}
+select#exampleFormControlSelect1 {
+    padding-left: 0px;
+}
+h4.normal_content {
+    margin-top: 24px;
+}
+
+@media (max-width: 1200px) and (min-width: 768px){
+    .account-cntnt>h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 767px){
+    .account-cntnt>h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .sideBar-tabs {
+        padding-top: 15px;
+    }
+    .account-form-wrapper {
+        padding: 30px 15px;
+    }
+    .account-page-wrapper.forget-password-screen .submit-design {
+        margin-top: 20px;
+    }
+    .account-form-wrapper .submit-design {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .btn.rectangle-btn {
+        padding: 5px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+    }
+    .my-profile-form {
+        padding: 30px 15px;
+    }
+    .logo-wrapper>img {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    .submit-design>input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    table, thead, tbody, th, td, tr {
+    display: block;
+}
+thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+tr {
+    border: 1px solid #ccc;
+}
+.table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+}
+td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    font-weight: 700;
+}
+.tab-heading {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.table_heading {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+td:nth-of-type(1):before { content: "Created On"; }
+td:nth-of-type(2):before { content: "Email Id"; }
+td:nth-of-type(3):before { content: "Documents Imported"; }
+td:nth-of-type(4):before { content: "Last Sync"; }
+td:nth-of-type(5):before { content: "Status"; }
+td:nth-of-type(6):before { content: "Actions"; }
+}
+@media (max-width: 1200px){
+    .account-cntnt>p {
+        font-size: 16px;
+    }
+    .apps-listing-sec li>a .app-description{
+        padding-right: 0px !important;
+    }
+    .footer-description {
+        background-color: #f7f7f7;
+        padding: 30px;
+        text-align: center;
+    }
+    .slide-left {
+        margin-left: 0px;
+    }
+    .tab-heading>h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .my-profile-sec .profile-cntnt {
+        padding: 15px;
+    }
+    .my-profile-sec .profile-cntnt>h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .recent-activity-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .recent-activity-wrapper ul>li h4 {
+        font-size: 13px;
+    }
+    .tab-content-dashboard {
+        padding: 15px;
+    }
+    .apps-listing-sec li>a .app-description {
+        font-size: 13px;
+    }
+    .circle-apps-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .account-form-wrapper form {
+        padding-top: 0px;
+    }
+    .account-form-wrapper .submit-design {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .dont-account.mobile-hide {
+        display: none;
+    }
+    .dont-account.mobile-show {
+        display: block !important;
+        position: initial;
+    }
+    .dont-account .btn {
+        margin-left: 0px !important;
+        padding: 0px !important;
+        background-color: transparent;
+        color: #f1d047;
+        font-size: 15px;
+        position: relative;
+        top: -2px;
+    }
+    .dont-account>p {
+        text-align: center;
+    }
+}
+@media (max-width: 991px){
+    .tab-row-dashboard .row>div {
+        margin-bottom: 30px;
+    }
+}
+
+
+

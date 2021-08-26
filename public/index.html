@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Cart-Task</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/fontawesome.css">
+      <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+      <link rel="stylesheet" href="assets/css/all.css">
+      <link rel="stylesheet" href="assets/css/slick.css">
+      <link rel="stylesheet" href="assets/css/slick-theme.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/fontawsome.js"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="assets/js/slick.js"></script>
+</head>
+   <body>
+   
+    <div id="app"></div>
+   
+  <script>
+    $(document).ready(function(){
+    $('.toggle-icn').click(function(){
+     $('.side-bar-wrapper').addClass('active');
+     $('.tab-content-dashboard').addClass('slide-left');
+     $('footer').addClass('slide-left');
+    });
+    $('.close-toggleicn').click(function(){
+     $('.side-bar-wrapper').removeClass('active');
+     $('.tab-content-dashboard').removeClass('slide-left');
+     $('footer').removeClass('slide-left');
+    });
+    });
+  </script>
+  </body>
+</html>

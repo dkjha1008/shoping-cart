@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Moreyou</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/fontawesome.css">
+      <link rel="stylesheet" href="css/fontawesome.min.css">
+      <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/slick-theme.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/fontawsome.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/slick.js"></script>
+</head>
+   <body>
+      <header id="header">
+          <div class="main-header-sec">
+             <div class="toggle-left">
+                <span class="toggle-icn"><i class="fas fa-bars"></i></span>
+             </div>
+             <div class="user-account">
+               <div class="dropdown">
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                     <span class="circle-user-name">JS</span>
+                     <span class="user-name">Justin Shepp</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                  </div>
+                </div>
+             </div>
+          </div>
+          <div class="side-bar-wrapper active">
+            <div class="side-bar-inner">
+               <div class="side-bar-logo">
+                  <img src="images/white-logo.png">
+                  <span class="close-toggleicn"><i class="fas fa-bars"></i></span>
+               </div>
+               <div class="sideBar-tabs">
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="nav-item">
+                       <a class="nav-link active" data-toggle="tab" href="#myApps"><span class="tab-icon"><i class="fas fa-mobile-alt"></i></span> My Apps</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" data-toggle="tab" href="#MyProfile"><span class="tab-icon"><i class="far fa-user-circle"></i></span> My Profile</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" data-toggle="tab" href="#MyProfile"><span class="tab-icon"><i class="far fa-user-circle"></i></span> Select Account Type</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" data-toggle="tab" href="#MyProfile"><span class="tab-icon"><i class="far fa-user-circle"></i></span>Add Paypal Account</a>
+                     </li>
+                      <li class="nav-item">
+                       <a class="nav-link" data-toggle="tab" href="#MyProfile"><span class="tab-icon"><i class="far fa-user-circle"></i></span>Bank Connections</a>
+                     </li>
+                   </ul>
+               </div>
+            </div>
+          </div>
+      </header>
+      <main class="main-content">
+          <div class="tab-content-dashboard slide-left">
+              <div class="tab-heading">
+                <div class="table_heading">
+                <h2>Subscription History</h2>
+              </div>
+              <div class="addaccount_button">
+                <h5>Credit Balance: €15.00</h5>
+              </div>
+            </div>
+            <div class="table_section">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Order Number</th>
+                    <th>Order Date</th>
+                    <th>Item</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+              <tr>
+                <td>12009</td>
+                <td>24/03/21</td>
+                <td>Fax 4 Recipients</td>
+                <td>- €2.50</td>
+              </tr>
+              <tr>
+                <td>12010</td>
+                <td>24/03/21</td>
+                <td>Money Annual</td>
+                <td>- €110.99</td>
+              </tr>
+                <tr>
+                <td>12011</td>
+                <td>24/03/21</td>
+                <td>Docs Annual</td>
+                <td>-- €110.99</td>
+              </tr>
+               <tr>
+                <td>12012</td>
+                <td>24/03/21</td>
+                <td>Credits</td>
+                <td>+ €100.00</td>
+              </tr>
+               <tr>
+                <td>12013</td>
+                <td>24/03/21</td>
+                <td>Fax 4 Recipients</td>
+                <td>- €2.50</td>
+                <td>€15,383</td>
+              </tr>
+                  <tr>
+                <td>12014</td>
+                <td>24/03/21</td>
+                <td>Fax 4 Recipients</td>
+                <td>- €2.50</td>
+                <td>€89,378</td>
+              </tr>
+              <tr>
+                <td>12015</td>
+                <td>24/03/21</td>
+                <td>Letter 4 Recipients</td>
+                <td>- €2.50</td>
+                <td>€15,383</td>
+              </tr>
+             </tbody>
+            </div>
+          </div>
+      </main>
+      <footer>
+       <div class="footer-description">
+          <p>© 2020 Moreyou. All Rights Reserved</p>
+       </div>
+      </footer>
+   <script>
+     $(document).ready(function(){
+     $('.toggle-icn').click(function(){
+      $('.side-bar-wrapper').addClass('active');
+      $('.tab-content-dashboard').addClass('slide-left');
+      $('footer').addClass('slide-left');
+     });
+     $('.close-toggleicn').click(function(){
+      $('.side-bar-wrapper').removeClass('active');
+      $('.tab-content-dashboard').removeClass('slide-left');
+      $('footer').removeClass('slide-left');
+     });
+     });
+   </script>
+   </body>
+</html>
